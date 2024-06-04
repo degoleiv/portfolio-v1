@@ -1,5 +1,5 @@
 import './TimeLine.css'
-export function TimeLine() {
+export default  function TimeLine() {
     return (
         <>
             <div className="timeline">
