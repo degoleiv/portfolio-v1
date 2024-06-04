@@ -1,7 +1,7 @@
 import './TimeLine.css'
 export function TimeLine() {
     return (
-        <><h2>Education</h2>
+        <>
             <div className="timeline">
         
         <div className="event">

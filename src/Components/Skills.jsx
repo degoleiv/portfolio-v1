@@ -13,10 +13,10 @@ import {
 import { faDatabase } from "@fortawesome/free-solid-svg-icons/faDatabase";
 import { faC, faHashtag } from "@fortawesome/free-solid-svg-icons";
 import './Skills.css'
-export function Skills() {
+export function Skills({title}) {
   return (
     <article className="skills">
-  <h2>SKILLS</h2>
+  <h2>{title}</h2>
   <ul>
     <li>
       <FontAwesomeIcon icon={faUnity} /> Unity

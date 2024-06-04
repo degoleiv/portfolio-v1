@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-export function Footer (){
+export function Footer ({title}){
     return (
         <footer>
-        <p>Get In Touch</p>
+        <p>{title}</p>
         <a href="mailto:degocyx1211@gmail.com" alt="Email" title="Email">
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
