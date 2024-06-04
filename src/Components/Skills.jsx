@@ -12,56 +12,57 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons/faDatabase";
 import { faC, faHashtag } from "@fortawesome/free-solid-svg-icons";
-import './Skills.css'
-export function Skills({title}) {
+import './Skills.css';
+
+export function Skills({ title }) {
   return (
     <article className="skills">
-  <h2>{title}</h2>
-  <ul>
-    <li>
-      <FontAwesomeIcon icon={faUnity} /> Unity
-    </li>
-    <li alt="React">
-      <FontAwesomeIcon icon={faReact} /> React
-    </li>
-    <li alt="HTML, JS, CSS">
-      <FontAwesomeIcon icon={faHtml5} /> 
-      <FontAwesomeIcon icon={faJs} /> 
-      <FontAwesomeIcon icon={faCss3} /> HTML5, CSS3, JavaScript
-    </li>
-    <li alt="C#">
-      <FontAwesomeIcon icon={faC} /> 
-      <FontAwesomeIcon icon={faHashtag} /> 
-    </li>
-    <li alt="Python">
-      <FontAwesomeIcon icon={faPython} /> Python
-    </li>
-    <li alt="Java">
-      <FontAwesomeIcon icon={faJava} /> Java
-    </li>
-    <li alt="Database">
-      <FontAwesomeIcon icon={faDatabase} /> Redis
-    </li>
-    <li alt="Database">
-      <FontAwesomeIcon icon={faDatabase} /> Mongo
-    </li>
-    <li alt="Database">
-      <FontAwesomeIcon icon={faDatabase} /> PostGresql
-    </li>
-    <li alt="Database">
-      <FontAwesomeIcon icon={faDatabase} /> Mysql
-    </li>
-    <li alt="Git">
-      <FontAwesomeIcon icon={faGit} /> Git
-    </li>
-    <li alt="Docker">
-      <FontAwesomeIcon icon={faDocker} /> Docker
-    </li>
-  </ul>
-</article>
-
+      <h2>{title}</h2>
+      <ul>
+        <li title="Unity">
+          <FontAwesomeIcon icon={faUnity} /> Unity
+        </li>
+        <li title="React">
+          <FontAwesomeIcon icon={faReact} /> React
+        </li>
+        <li title="HTML, JS, CSS">
+          <FontAwesomeIcon icon={faHtml5} /> 
+          <FontAwesomeIcon icon={faJs} /> 
+          <FontAwesomeIcon icon={faCss3} /> HTML5, CSS3, JavaScript
+        </li>
+        <li title="C#">
+          <FontAwesomeIcon icon={faC} /> 
+          <FontAwesomeIcon icon={faHashtag} /> 
+        </li>
+        <li title="Python">
+          <FontAwesomeIcon icon={faPython} /> Python
+        </li>
+        <li title="Java">
+          <FontAwesomeIcon icon={faJava} /> Java
+        </li>
+        <li title="Redis">
+          <FontAwesomeIcon icon={faDatabase} /> Redis
+        </li>
+        <li title="Mongo">
+          <FontAwesomeIcon icon={faDatabase} /> Mongo
+        </li>
+        <li title="PostgreSQL">
+          <FontAwesomeIcon icon={faDatabase} /> PostgreSQL
+        </li>
+        <li title="MySQL">
+          <FontAwesomeIcon icon={faDatabase} /> MySQL
+        </li>
+        <li title="Git">
+          <FontAwesomeIcon icon={faGit} /> Git
+        </li>
+        <li title="Docker">
+          <FontAwesomeIcon icon={faDocker} /> Docker
+        </li>
+      </ul>
+    </article>
   );
 }
+
 
 //  <li >
 //             <FontAwesomeIcon icon={faBlender} />
