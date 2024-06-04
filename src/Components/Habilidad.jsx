@@ -14,7 +14,7 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons/faDatabase";
 import { faC, faHashtag } from "@fortawesome/free-solid-svg-icons";
 import './Skills.css';
 
-export function Skills({ title }) {
+export function SkillsCom({ title }) {
   return (
     <article className="skills">
       <h2>{title}</h2>

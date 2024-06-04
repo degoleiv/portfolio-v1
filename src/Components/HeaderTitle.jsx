@@ -1,6 +1,6 @@
 
 import './Header.css';
-export function Header({title, subtitle, description}) {
+export default function Header({title, subtitle, description}) {
     return (
         <header className="header">
             <div className="header-content">

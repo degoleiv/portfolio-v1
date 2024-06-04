@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
-import { Skills } from "./components/Skills";
+import { SkillsCom } from "./components/Habilidad";
 import { TimeLine } from "./components/TimeLine";
 import { ItchLink } from "./components/ItchLink";
 import { Footer } from "./components/Footer";
-import {Header} from "./components/Header"; // Importar sin llaves si es un export por defecto
+import HeaderTitle from "./components/HeaderTitle"; // Importar sin llaves si es un export por defecto
 
 function App() {
   const data = {
@@ -84,9 +84,9 @@ function App() {
         </div>
 
         <div className="layout">
-          <Header title={stateData["title"]} subtitle={stateData["subtitle"]} description={stateData["description"]}/>
+          <HeaderTitle title={stateData["title"]} subtitle={stateData["subtitle"]} description={stateData["description"]}/>
           <main>
-            <Skills title={stateData["title-skills"]}/>
+            <SkillsCom title={stateData["title-skills"]}/>
             <article>
               <h2>{stateData["title-project1"]}</h2> 
             </article>
