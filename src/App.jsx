@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-// import { SkillsCom } from "./components/Habilidad";
-import { TimeLine } from "./components/TimeLine";
-import { ItchLink } from "./components/ItchLink";
-import { Footer } from "./components/Footer";
+import  SkillsCom  from "./components/Habilidad";
+import  TimeLine  from "./components/TimeLine";
+import  ItchLink from "./components/ItchLink";
+import  Footer  from "./components/Footer";
 import HeaderTitle from "./components/HeaderTitle"; // Importar sin llaves si es un export por defecto
 
 function App() {
@@ -86,7 +86,7 @@ function App() {
         <div className="layout">
           <HeaderTitle title={stateData["title"]} subtitle={stateData["subtitle"]} description={stateData["description"]}/>
           <main>
-            {/* <SkillsCom title={stateData["title-skills"]}/> */}
+            <SkillsCom title={stateData["title-skills"]}/>
             <article>
               <h2>{stateData["title-project1"]}</h2> 
             </article>

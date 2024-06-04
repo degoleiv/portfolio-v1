@@ -1,6 +1,6 @@
 
 
-export function ItchLink() {
+export default  function ItchLink() {
     const games = [
         {
             title: 'Ancestral Journey',
