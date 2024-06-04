@@ -1,0 +1,59 @@
+.timeline {
+    position: relative;
+  }
+  
+  .event {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .event:hover {
+    color:#3af321 ;
+  }
+
+  
+  .event-date {
+    width: 100px;
+    text-align: end;
+    font-weight: bold;
+  }
+  
+  .event-content {
+    margin-left: 20px;
+  }
+  
+  .event-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .event-content p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+ 
+  /* Línea de tiempo */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px; /* ajusta según el ancho de .event-date */
+    width: 2px; /* grosor de la línea */
+    height: 100%;
+    background-color: #ccc;
+  }
+  
+  /* Círculos conectores */
+  .event::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50px; /* ajusta según el ancho de .event-date */
+    width: 10px; /* diámetro del círculo */
+    height: 10px; /* diámetro del círculo */
+    border-radius: 50%;
+    background-color: #ccc;
+    transform: translateY(-50%);
+  }
+  
+ 

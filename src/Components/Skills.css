@@ -1,0 +1,30 @@
+/* Estilos para las habilidades */
+.skills {
+    margin-bottom: 30px;
+    margin: 2px; /* Margen inferior de las habilidades */
+  }
+  
+  .skills h2 {
+    font-size: 1.8rem; /* Tamaño del texto de la sección de habilidades */
+    /* Color del texto de la sección de habilidades */
+    margin-bottom: 10px; /* Margen inferior del título de habilidades */
+  }
+  
+  .skills ul {
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+    padding: 0;
+    display: grid; /* Utiliza el diseño de cuadrícula */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 10px; /* Espacio entre los elementos */
+  }
+  .skills li:hover {
+    color:#3af321 ;
+  }
+
+  
+  .skills li {
+    font-size: 1.5rem; /* Tamaño del texto de las habilidades */
+    /* Color del texto de las habilidades */
+    margin-bottom: 10px; /* Margen inferior de cada habilidad */
+  }
+  
