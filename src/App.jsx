@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
 
-import { Skills } from "./Components/Skills";
-import { TimeLine } from "./Components/TimeLine";
-import { ItchLink } from "./Components/ItchLink";
-import { Footer } from "./Components/Footer";
-import { Header } from "./Components/Header";
+import { Skills } from "./components/Skills";
+import { TimeLine } from "./components/TimeLine";
+import { ItchLink } from "./components/ItchLink";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
 function App() {
   const [stateDark, setDark] = useState(false);
 

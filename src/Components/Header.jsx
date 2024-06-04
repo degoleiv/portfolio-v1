@@ -1,11 +1,11 @@
 
 import './Header.css';
-
 export function Header() {
     return (
         <header className="header">
             <div className="header-content">
-                <img src=".\src\assets\1710393763804.jpg" alt="photo" className="header-image" />
+            <img src='../src/assets/1710393763804.jpg' alt="photo" className="header-image" />
+
                 <div className="header-text">
                     <h1>CHRISTIAN CONTRERAS</h1>
                     <h2>GAME DEVELOPER AND SOFTWARE DEVELOPER</h2>
