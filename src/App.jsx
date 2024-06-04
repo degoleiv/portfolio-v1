@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-import  SkillsCom  from "./components/Habilidad";
-import  TimeLine  from "./components/TimeLine";
-import  ItchLink from "./components/ItchLink";
-import  Footer  from "./components/Footer";
-import HeaderTitle from "./components/HeaderTitle"; // Importar sin llaves si es un export por defecto
+import  SkillsCom  from "./Components/Skill";
+import  TimeLine  from "./Components/TimeLine";
+import  ItchLink from "./Components/ItchLink";
+import  Footer  from "./Components/Footer";
+import HeaderTitle from "./Components/HeaderTitle"; // Importar sin llaves si es un export por defecto
 
 function App() {
   const data = {
