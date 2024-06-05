@@ -1,49 +1,85 @@
 /* Estilos generales para el encabezado */
+
+
 .header {
-     width: 100%;
     text-align: center;
 }
 
+.header p {
+    font-size: 1rem;
+    width: 100%;/* Ancho máximo del párrafo */ 
+}
+
+
 .header-content {
-   
     display: flex;
     gap: 2rem;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow flex items to wrap on smaller screens */
 }
 
 .header-image {
     margin: 0;
     border-radius: 50%; 
-    
+ 
 }
 
 .header-text {
-    text-align: left;
+    text-align: left; /* Default alignment */
 }
 
 .header h1 {
     font-size: 2rem;
     margin: 0;
-
 }
 
 .header h2 {
     font-size: 1.5rem;
-    margin: 10px 0;
-  
 }
 
 .header h3 {
     font-size: 1.2rem;
     margin: 10px 0;
- 
 }
 
-.header p {
-    font-size: 1rem;
-    width: 100%;/* Ancho máximo del párrafo */
-    line-height: 1.5;
-    margin: 0 auto;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 1rem;
+    }
+
+  
+
+    .header-text {
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .header h1 {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+
+    .header h2 {
+        font-size: 1.3rem;
+    }
+
+    .header h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem; /* Further adjust font size for very small screens */
+    }
+
+    .header h2 {
+        font-size: 1.2rem;
+    }
+
+    .header h3 {
+        font-size: 0.9rem;
+    }
 }

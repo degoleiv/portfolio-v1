@@ -1,5 +1,5 @@
 
-
+import './ItchLink.css'
 export default  function ItchLink() {
     const games = [
         {
@@ -29,12 +29,12 @@ export default  function ItchLink() {
                     <h3>{game.title}</h3>
                     <iframe 
                         src={game.embedUrl}
-                        width="552" 
+                      
                         height="167"
                         allowFullScreen
                         title={game.title}
                     />
-                    <p>{game.description}</p>
+                    
                    
                 </div>
             ))}

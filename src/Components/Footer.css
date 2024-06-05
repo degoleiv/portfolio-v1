@@ -1,0 +1,29 @@
+/* App.css */
+footer {
+    text-align: center;
+    padding: 20px;
+    
+  }
+.Icons{
+    display: flex;
+    justify-content: center;
+}  
+
+  footer p {
+    margin: 0 0 10px;
+  }
+  
+  footer a {
+    margin: 0 10px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 24px; /* Ajusta el tamaño del icono */
+  }
+  
+  footer a:hover {
+    color: #3af321;
+  }
+  
+  
+  
+  

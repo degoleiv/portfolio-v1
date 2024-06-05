@@ -42,7 +42,7 @@ function App() {
   const [stateDark, setDark] = useState(false);
   const [stateLanguage, setLanguage] = useState(false);
   const [stateData, setData] = useState({}); // Inicializar como objeto vacío
-
+  
   useEffect(() => {
     
     if (stateLanguage) {
@@ -59,7 +59,7 @@ function App() {
     <>
       
       <div className={stateDark ? "dark-mode" : "light-mode"}>
-        <div>
+        <div className="toogle-container">
           {stateDark ? stateData.dark : stateData.light}
           <label className="switch">
             <input
@@ -71,7 +71,7 @@ function App() {
           </label>
         </div>
 
-        <div>
+        <div className="toogle-container">
           {stateLanguage ? stateData.spanish : stateData.english}
           <label className="switch">
             <input
@@ -83,24 +83,33 @@ function App() {
           </label>
         </div>
 
-        <div className="layout">
-          <HeaderTitle title={stateData["title"]} subtitle={stateData["subtitle"]} description={stateData["description"]}/>
-          <main>
+        <div className="layout" >
+          <div id="section-1">
+            <HeaderTitle title={stateData["title"]} subtitle={stateData["subtitle"]} description={stateData["description"]}/>
+          </div>
+          
+          <main >
+            <div id="section-2">
             <SkillsCom title={stateData["title-skills"]}/>
-            <article>
+            </div>
+            
+            <article id="section-3">
               <h2>{stateData["title-project1"]}</h2> 
             </article>
-            <article>
+            <article id="section-4">
               <h2>{stateData["title-project2"]}</h2> 
               <ItchLink />
             </article>
-            <article>
+            <article id="section-5">
             <h2>{stateData["education-1"]}</h2>
             <TimeLine />
             </article>
             
           </main>
+          <div id="section-5">
           <Footer title={stateData["contact"]} />
+          </div>
+          
         </div>
       </div>
     
